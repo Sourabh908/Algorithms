@@ -170,18 +170,6 @@ for(int i=1;i<=n;++i){
       }
       m[prf[i]]=i;
 }
-for(int i=0;i<=n;++i){
-    cout<<prf[i]<<" ";
-}
-cout<<nl;
-for(int i=0;i<=n;++i){
-    cout<<lst[i]<<" ";
-}
-cout<<nl;
-for(auto &i: m){
-    cout<<i.first<<" "<<i.second<<" ";
-}
-cout<<nl;
 vector<int> dp(n+1,0);
 for(int i=1;i<=n;++i){
      dp[i]=max(dp[i],dp[i-1]);
