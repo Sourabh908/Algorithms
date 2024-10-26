@@ -177,10 +177,8 @@ for(int i=1;i<=n;++i){
         dp[i]=max(dp[i],dp[lst[i]]+1);
      }
 }
-// cout<<get_max(dp)<<nl;
-
-
-
+cout<<get_max(dp)<<nl;
+  
 }
 
 int main() {
